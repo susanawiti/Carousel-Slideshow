@@ -1,0 +1,91 @@
+ body {   
+            background: #fff; 
+            padding-top: 30px; 
+        }  
+        .carousel-inner {  
+            display: none  
+        }  
+            .carousel-inner img {  
+                width: 100%;  
+            }  
+        .itemActive {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color:#a54700;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }
+        .dot {
+            cursor:pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+}
+
+        .dot:hover {
+            color:yellow;
+            background: cyan;
+        } 
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background: #8f7214;  
+                color: #d97f27;
+            }  
+        .content {  
+            color: #ca9e47;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 500px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: red;  
+        }  
+       /* .dot{
+            background: red;
+            margin: auto;*/
+        }
+        /* Fading animation */  
+       /* .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  */
+        @-webkit-keyframes carousel-inner {  
+            from {  
+                opacity: 0.5 
+            }  
+            to {  
+                opacity: 0.5 
+            }  
+        }  
+  
+        @keyframes carousel-inner {  
+            from {  
+                opacity: .2
+            }  
+            to {  
+                opacity: 0.5 
+            }  
+        } 
