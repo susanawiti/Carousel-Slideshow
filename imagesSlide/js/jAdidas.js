@@ -85,7 +85,7 @@ $(document).ready(function() {
       $getIdPoint = $(this).attr('id');
       moveSlidePoint();
 
-      /*console.log('counter wynosi: ' + counter + ' a distPoint wynosi: ' + distPoint);*/
+   
 
       clearInterval(time);
       time = setInterval(changeSlide, myInterval);
